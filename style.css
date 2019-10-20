@@ -1,38 +1,74 @@
-@import url('https://fonts.google.com/specimen/Overpass');
+@import url('https://fonts.googleapis.com/css?family=Overpass&display=swap');
 
 html, body{
-    /*temporary*/
     font-family: 'Overpass', sans-serif;
     scroll-behavior: smooth;
     margin: 0;
 }
 
-#header{
-    grid-area: auto;
-    position: relative;
-    height: 600px;
+#navbar{
+    width: 100%;
+    background: #393939;
     display: flex;
-    flex-direction: column;
-    justify-content: right;
+    justify-content: space-between;
+    align-items: center;
 }
 
-#header canvas{
+#navbar a{
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: white;
+}
+
+#navbar ul{
+    list-style: none;
+    display: flex;
+    padding-right: 30px;
+}
+
+#navbar img{
+    border-radius: 50%;
+    width: 50px;
+    align-self: center;
+    padding: 10px;
+}
+
+
+#title{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+
+
+}
+
+#title canvas{
     background-image: "/home/Pictures/wallpapers/14 - EZ7un71.jpg";
     position: absolute;
     width: 100%;
     height: 100%;
 }
 
-#header h1{
+#title img{
+    border-radius: 50%;
+    width: 300px;
+    align-self: center;
+
+
+}
+
+#title h1{
     font-size: 80px;
-    margin: 10px auto;
+    margin: 10px;
 }
 
-#header h2{
-    margin: 10px auto;
+#title h2{
+    margin: 10px;
 }
 
-#header div{
+#title div{
     margin-top: 20px;
     width: auto;
     display: flex;
