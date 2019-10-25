@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css?family=Overpass:300&display=swap');
+
+html, body{
+    font-family: 'Overpass', sans-serif;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    
+}
+
+body{
+    background: url(img/bgimg1.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color:transparent;
+}
+
+.navbar a{
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    max-width: 1000px;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(4px);
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    padding: 20px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.container div{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.container div img{
+    padding: 10px;
+    border-radius: 20px;
+    max-height: 150px;
+    overflow: hidden;
+    transition: 0.5s ease;
+}
+
+.container div img:hover{
+    transform: scale(1.5);
+    
+}
+
+.title h1{
+    font-size: 50px;
+    margin: 10px;
+
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: gray;
+  }
+
+  .container:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+ 
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
