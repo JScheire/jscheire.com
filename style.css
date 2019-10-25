@@ -3,85 +3,94 @@
 html, body{
     font-family: 'Overpass', sans-serif;
     scroll-behavior: smooth;
-    margin: auto;
-    padding: 50px;
+    margin: 0;
+    width: 100%;
+    height: 100%;
     
 }
 
-#navbar{
-    width: 100%;
-    background: #393939;
+body{
+    background: url(img/bgimg1.jpg);
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
+    background-repeat: no-repeat;
     display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
     justify-content: center;
     background-color:transparent;
 }
 
-#navbar a{
+.navbar a{
     display: inline-block;
     padding: 10px 15px;
     text-decoration: none;
-    color: black;
+    font-size: 20px;
+    color: white;
 
 }
 
-#navbar ul{
+.navbar ul{
     list-style: none;
     display: flex;
-    padding-right: 30px;
+    flex-direction: row;
 }
 
 
-#title{
+.title{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-
+    box-sizing: border-box;
+    max-width: 800px;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(4px);
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    padding: 20px;
 }
 
-#title canvas{
-    /*background-image: "/home/Pictures/wallpapers/14 - EZ7un71.jpg";*/
-    position: absolute;
-    width: 100%;
-    height: 100%;
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
 }
 
-#title img{
+.title img{
     border-radius: 50%;
     width: 200px;
     align-self: center;
-    padding: 50px;
+    padding: 30px;
 
 
 }
 
-#title h1{
+.title h1{
     font-size: 50px;
     margin: 10px;
-    display: flex;
 
 }
 
-#title h2{
+.title h2{
     margin: 10px;
     font-size: 20px;
 }
 
-#title h3{
-    font-size: 15px;
-}
-
-#title div{
+.title div{
     font-size: 30px;
     display: flex;
     align-items: center;
     flex-direction: row;
-}
-
-#aboutme title{
-    font-size: 100px;
 }
 
 .fa{
@@ -89,14 +98,6 @@ html, body{
     font-size: 30px;
     width: 30px;
     text-decoration: none;
-    color: black;
+    color:white;
 }
-
-#banner div svg {
-    fill: #fff;
-    width: 30px;
-    height: 30px;
-    margin: 0 10px;
-}
-
 
