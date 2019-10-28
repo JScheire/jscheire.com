@@ -121,6 +121,11 @@ body{
     margin-bottom: 0;
 }
 
+.container div{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
 
 
 
