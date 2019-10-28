@@ -78,8 +78,8 @@ body{
 
 .container div img:hover{
     visibility: visible;
-    transform: scale(1.2);
-    opacity: 0.5;
+    transform: scale(1.1);
+    opacity: 0.3;
     
 }
 
@@ -93,18 +93,34 @@ body{
     position: relative;
 }
 
-
-
 .contain-text .text{
     opacity: 0;
     color: white;
-    font-size: 18px;
+    font-size: 15px;
     position: absolute;
+    pointer-events: none;
+    text-align: center;
+    display: block;
+
+}
+
+.contain-text .text .text-title{
+    font-size: 18px;
 }
 
 .contain-text:hover .text{
+    transition: 0.5s ease;
     opacity: 1;
 }
+
+.contain-text hr{
+    border: 1px solid white;
+    width: 50px;
+    background-color: white;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 
 
 
