@@ -73,10 +73,13 @@ body{
     max-height: 150px;
     overflow: hidden;
     transition: 0.5s ease;
+    opacity: 1;
 }
 
 .container div img:hover{
-    transform: scale(1.5);
+    visibility: visible;
+    transform: scale(1.2);
+    opacity: 0.5;
     
 }
 
@@ -86,31 +89,22 @@ body{
 
 }
 
-.overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: gray;
-  }
+.contain-text{
+    position: relative;
+}
 
-  .container:hover .overlay {
-    opacity: 1;
-  }
-  
-  .text {
+
+
+.contain-text .text{
+    opacity: 0;
     color: white;
-    font-size: 20px;
+    font-size: 18px;
     position: absolute;
-    top: 50%;
-    left: 50%;
- 
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
+}
+
+.contain-text:hover .text{
+    opacity: 1;
+}
+
+
 
