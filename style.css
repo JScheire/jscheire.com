@@ -9,6 +9,61 @@ html, body{
     
 }
 
+@-webkit-keyframes fadeInDown {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }   
+
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+	0% {
+		opacity: 0;
+		-webkit-transform: translateY(50px);
+		transform: translateY(50px)
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: translateY(0);
+		transform: translateY(0)
+	}
+}
+
+@keyframes fadeInUp {
+	0% {
+		opacity: 0;
+		-webkit-transform: translateY(50px);
+		transform: translateY(50px)
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: translateY(0);
+		transform: translateY(0)
+	}
+}
+
+
 body-home{
     background: url(img/bgimg2.jpg);
     background-size: cover;
@@ -48,6 +103,7 @@ body-about{
     font-size: 20px;
     font-weight: 500;
     color: white;
+    animation: fadeInDown 1s;
 
 }
 
@@ -66,6 +122,7 @@ body-about{
     background-color: rgba(0, 0, 0, 0.3);
     color: white;
     padding: 20px;
+    animation: fadeInUp 1s;
 }
 
 .container{
@@ -88,6 +145,7 @@ body-about{
     background-color: rgba(0, 0, 0, 0.3);
     color: white;
     padding: 20px;
+    animation: fadeInUp 1s;
 }
 
 .title-about h1{
@@ -123,6 +181,7 @@ body-about{
     text-decoration: none;
     font-size: 20px;
     color: white;
+    animation: fadeInDown 1s;
 
 }
 
@@ -160,6 +219,27 @@ body-about{
     color:white;
 }
 
+.fa-linkedin:hover{
+    color: #0073b0;
+    transition: 0.5s ease;
+}
+
+.fa-github:hover{
+    color: gray;
+    transition: 0.5s ease;
+}
+
+.fa-telegram:hover{
+    color: #34abdf;
+    transition: 0.5s ease;
+}
+
+.fa-envelope:hover{
+    color: #e85b4f;
+    transition: 0.5s ease;
+}
+
+
 .container div svg{
     padding-top: 12px;
     fill: white;
@@ -168,5 +248,9 @@ body-about{
     margin: 0 10px;
 }
 
+.container div svg:hover{
+    fill: #2d9eb2;
+    transition: 0.5s ease;
+}
 
 
